@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AEROSAFE TRACE Style - Anti-Smog Solar Dome OS</title>
+<title>AEROSAFE V3.1 - Fixed Navigation</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<style>body{font-family:Inter,sans-serif;background:#090E1E;color:#E6E8F0}.mono{font-family:JetBrains Mono,monospace}</style>
+<style>body{font-family:Inter,sans-serif;background:#090E1E;color:#E6E8F0;scroll-behavior:smooth}.mono{font-family:JetBrains Mono,monospace}</style>
 </head><body class="flex h-screen overflow-hidden">
-<aside class="w-[240px] bg-[#0D1226] border-r border-white/[0.06] flex flex-col p-3 hidden md:flex">
-<div class="flex items-center gap-2 px-2 py-3"><div class="w-7 h-7 bg-emerald-400 rounded-md flex items-center justify-center text-black font-black">A</div><span class="font-bold tracking-widest text-sm">AEROSAFE</span><span class="text-[10px] bg-white/10 px-1.5 py-0.5 rounded ml-1">DEMO WORKSPACE</span></div>
+<aside class="w-[240px] bg-[#0D1226] border-r border-white/[0.06] flex flex-col p-3 hidden md:flex shrink-0">
+<div class="flex items-center gap-2 px-2 py-3"><div class="w-7 h-7 bg-emerald-400 rounded-md flex items-center justify-center text-black font-black">A</div><span class="font-bold tracking-widest text-sm">AEROSAFE</span></div>
 <div class="text-[10px] text-slate-500 px-2 mt-4 tracking-widest">NAVIGATION</div>
 <div class="mt-2 space-y-1">
-<div class="bg-white/[0.06] border border-white/10 rounded-lg px-3 py-2 text-sm">◉ Overview & Vision</div>
-<div class="px-3 py-2 text-sm text-slate-400">⚠ Challenge & Solution</div>
-<div class="px-3 py-2 text-sm text-slate-400">🤖 AI Agent</div>
-<div class="px-3 py-2 text-sm text-slate-400">◍ Dome Monitor</div>
-<div class="px-3 py-2 text-sm text-slate-400">⚡ Energy Center</div>
-<div class="px-3 py-2 text-sm text-slate-400">🧪 Tests & Trust</div>
+<a href="#overview" class="block bg-white/[0.06] border border-white/10 rounded-lg px-3 py-2 text-sm">◉ Overview & Vision</a>
+<a href="#challenge" class="block px-3 py-2 text-sm text-slate-400 hover:text-white">⚠ Challenge & Solution</a>
+<a href="#aiagent" class="block px-3 py-2 text-sm text-slate-400 hover:text-white">🤖 AI Agent</a>
+<a href="#dome" class="block px-3 py-2 text-sm text-slate-400 hover:text-white">◍ Dome Monitor</a>
+<a href="#energy" class="block px-3 py-2 text-sm text-slate-400 hover:text-white">⚡ Energy Center</a>
+<a href="#tests" class="block px-3 py-2 text-sm text-slate-400 hover:text-white">🧪 Tests & Trust</a>
 </div>
 <div class="mt-auto bg-[#111732] border border-white/10 rounded-xl p-3">
-<p class="text-[11px] text-emerald-400 font-semibold">Hackathon Demo</p><p class="text-[11px] text-slate-400 mt-1">Experience automated safe-play flow.</p>
-<button class="w-full mt-2 bg-gradient-to-r from-violet-600 to-blue-600 text-xs py-2 rounded-lg font-semibold">Launch Demo Flow</button>
+<p class="text-[11px] text-emerald-400 font-semibold">Hackathon Demo</p>
+<button onclick="document.getElementById('dome').scrollIntoView({behavior:'smooth'})" class="w-full mt-2 bg-gradient-to-r from-violet-600 to-blue-600 text-xs py-2 rounded-lg font-semibold">Launch Demo Flow</button>
 </div>
 </aside>
 <div class="flex-1 flex flex-col overflow-auto">
-<div class="h-[52px] border-b border-white/[0.06] bg-[#0D1226]/80 flex items-center justify-between px-4">
-<div class="flex gap-6 text-[12px]"><span class="text-white font-semibold border-b-2 border-white pb-[15px] mt-[15px]">Overview</span><span class="text-slate-500 mt-[15px]">Command</span><span class="text-slate-500 mt-[15px]">Intelligence</span><span class="text-slate-500 mt-[15px]">Energy Graph</span><span class="text-slate-500 mt-[15px]">AERO AI</span></div>
-<div class="flex gap-2"><div class="bg-white/[0.05] border border-white/10 rounded-full px-3 py-1.5 text-xs text-slate-400">⌕ Search records...</div><button class="bg-white/[0.08] border border-white/10 text-xs px-3 py-1.5 rounded-full">◍ Meet AERO</button><button class="bg-[#5B5CFF] text-xs px-3 py-1.5 rounded-full font-semibold">✦ Interactive Demo</button></div>
+<div class="h-[52px] border-b border-white/[0.06] bg-[#0D1226]/90 backdrop-blur sticky top-0 z-20 flex items-center justify-between px-4 shrink-0">
+<div class="flex gap-6 text-[12px]"><a href="#overview" class="text-white font-semibold border-b-2 border-white pb-[15px] mt-[15px]">Overview</a><a href="#dome" class="text-slate-400 hover:text-white mt-[15px]">Command</a><a href="#dome" class="text-slate-400 hover:text-white mt-[15px]">Intelligence</a><a href="#energy" class="text-slate-400 hover:text-white mt-[15px]">Energy Graph</a><a href="#aiagent" class="text-slate-400 hover:text-white mt-[15px]">AERO AI</a></div>
+<div class="flex gap-2"><button onclick="document.getElementById('aiagent').scrollIntoView({behavior:'smooth'})" class="bg-white/[0.08] border border-white/10 text-xs px-3 py-1.5 rounded-full">◍ Meet AERO</button><button onclick="document.getElementById('dome').scrollIntoView({behavior:'smooth'})" class="bg-[#5B5CFF] text-xs px-3 py-1.5 rounded-full font-semibold">✦ Interactive Demo</button></div>
 </div>
-<div class="mx-6 mt-3 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-2 flex justify-between">
-<p class="text-[11px]"><span class="bg-amber-500 text-black px-2 py-0.5 rounded font-bold text-[10px] mr-2">HACKATHON PROTOTYPE</span><span class="text-amber-200/70">AEROSAFE IS CURRENTLY A HACKATHON PROTOTYPE. Demonstrating HEPA H13 filtration over deterministic simulation data. TRL-2.</span></p><span class="text-amber-300 text-[11px]">Launch Guided Scenario →</span>
+
+<section id="overview" class="mx-4 md:mx-6 mt-4 bg-gradient-to-b from-[#11193A] to-[#0C1025] border border-white/[0.06] rounded-[24px] p-8 md:p-14 text-center">
+<div class="inline-flex bg-white/[0.05] border border-white/10 rounded-full px-3 py-1 text-[11px]">AEROSAFE Personal Safety & Context-Aware Dome System • TRL-2 Prototype</div>
+<h1 class="text-[36px] md:text-[52px] font-extrabold leading-[0.95] mt-6">Breathe Safe.<br><span class="bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">Play Longer.</span></h1>
+<p class="text-slate-400 text-[13px] mt-5 max-w-[560px] mx-auto">Schools don't suffer from a lack of playgrounds — they suffer from unsafe air. Outside 320 AQI → Inside 45 AQI with HEPA H13.</p>
+<div class="flex justify-center gap-3 mt-7 flex-wrap">
+<button onclick="document.getElementById('dome').scrollIntoView({behavior:'smooth'})" class="bg-gradient-to-r from-blue-600 to-violet-600 px-5 py-2.5 rounded-full text-[13px] font-semibold">Enter Dome Console →</button>
+<button onclick="document.getElementById('dome').scrollIntoView({behavior:'smooth'})" class="bg-white/[0.06] border border-white/10 px-5 py-2.5 rounded-full text-[13px]">Interactive Demo Scenario</button>
+<button onclick="document.getElementById('aiagent').scrollIntoView({behavior:'smooth'})" class="bg-white/[0.06] border border-white/10 px-5 py-2.5 rounded-full text-[13px]">Meet AERO AI</button>
 </div>
-<div class="mx-6 mt-4 bg-gradient-to-b from-[#11193A] to-[#0C1025] border border-white/[0.06] rounded-[24px] p-16 text-center">
-<div class="inline-flex items-center gap-2 bg-white/[0.05] border border-white/10 rounded-full px-3 py-1 text-[11px]">AEROSAFE Personal Safety & Context-Aware Dome System</div>
-<h1 class="text-[54px] font-extrabold leading-[0.95] mt-6">Breathe Safe.<br><span class="bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">Play Longer.</span></h1>
-<p class="text-slate-400 text-[14px] mt-5 max-w-[560px] mx-auto">Schools don't suffer from a lack of playgrounds — they suffer from unsafe air. AEROSAFE connects solar power, HEPA filtration and AI to surface safe-play windows.</p>
-<div class="flex justify-center gap-3 mt-7"><button class="bg-gradient-to-r from-blue-600 to-violet-600 px-5 py-2.5 rounded-full text-[13px] font-semibold">Enter Dome Console →</button><button class="bg-white/[0.06] border border-white/10 px-5 py-2.5 rounded-full text-[13px]">Interactive Demo Scenario</button><button class="bg-white/[0.06] border border-white/10 px-5 py-2.5 rounded-full text-[13px]">Meet AERO AI</button></div>
-<div class="grid grid-cols-4 gap-3 mt-10 max-w-4xl mx-auto">
-<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="text-[10px] text-slate-500">OUTSIDE_AQI</p><p class="text-2xl font-bold text-red-400" id="kOut">320</p></div>
-<div class="bg-[#0E1430] border border-emerald-500/30 rounded-2xl p-4 text-left"><p class="text-[10px] text-slate-500">INSIDE_DOME</p><p class="text-2xl font-bold text-emerald-400" id="kIn">45</p></div>
-<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="text-[10px] text-slate-500">BATTERY_BACKUP</p><p class="text-2xl font-bold" id="kBatt">12.8h</p></div>
-<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="text-[10px] text-slate-500">AI_STATUS</p><p class="text-[14px] font-bold text-violet-300 mt-1">SAFE TO PLAY</p></div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-4xl mx-auto" id="dome">
+<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="mono text-[10px] text-slate-500">OUTSIDE_AQI</p><p class="text-2xl font-bold text-red-400" id="kOut">320</p></div>
+<div class="bg-[#0E1430] border border-emerald-500/30 rounded-2xl p-4 text-left"><p class="mono text-[10px] text-slate-500">INSIDE_DOME</p><p class="text-2xl font-bold text-emerald-400" id="kIn">45</p></div>
+<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="mono text-[10px] text-slate-500">BATTERY_BACKUP</p><p class="text-2xl font-bold" id="kBatt">12.8h</p></div>
+<div class="bg-[#0E1430] border border-white/10 rounded-2xl p-4 text-left"><p class="mono text-[10px] text-slate-500">AI_STATUS</p><p class="text-[14px] font-bold text-violet-300 mt-1">SAFE TO PLAY</p></div>
 </div>
+</section>
+
+<div class="grid md:grid-cols-3 gap-4 mx-4 md:mx-6 mt-4">
+<div class="md:col-span-2 bg-[#10152F]/60 border border-white/10 rounded-2xl p-5" id="challenge"><div class="flex justify-between"><h3 class="text-sm font-semibold">Intelligence Center • AQI Reduction</h3><span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded-full">LIVE</span></div><canvas id="aqiChart" height="110" class="mt-4"></canvas></div>
+<div class="bg-[#10152F]/60 border border-white/10 rounded-2xl p-5" id="energy"><h3 class="text-sm font-semibold">Energy Center • Solar + Grid</h3><canvas id="energyChart" height="110" class="mt-4"></canvas></div>
 </div>
-<div class="grid md:grid-cols-3 gap-4 mx-6 mt-4 pb-10">
-<div class="md:col-span-2 bg-[#10152F]/60 border border-white/10 rounded-2xl p-5"><h3 class="text-sm font-semibold">Intelligence Center • AQI Reduction</h3><canvas id="aqiChart" height="120" class="mt-4"></canvas></div>
-<div class="bg-[#10152F]/60 border border-white/10 rounded-2xl p-5"><h3 class="text-sm font-semibold">Energy Center</h3><canvas id="energyChart" height="120" class="mt-4"></canvas></div>
+
+<div class="mx-4 md:mx-6 mt-4 bg-[#10152F]/40 border border-violet-500/20 rounded-2xl p-6 flex gap-4" id="aiagent">
+<div class="w-12 h-12 bg-violet-600 rounded-full flex items-center justify-center text-xl">🤖</div>
+<div><h3 class="font-bold text-sm">AERO AI Agent</h3><p class="text-[12px] text-slate-400 mt-1" id="aiText">Analyzing outside AQI 320... Inside dome is 86% cleaner. SAFE TO PLAY.</p></div>
 </div>
+
+<div class="mx-4 md:mx-6 mt-4 bg-[#10152F]/40 border border-white/10 rounded-2xl p-5" id="tests">
+<h3 class="text-sm font-semibold">Tests & Trust • Honest Disclosure</h3>
+<p class="text-[12px] text-slate-400 mt-2">Deterministic simulation: inside = outside*(1-0.9997)*0.15. TRL-2 Prototype for SEVA FIRST.</p>
+<p class="text-[10px] text-amber-300/60 mt-2 mono">HACKATHON PROTOTYPE: Demonstrating HEPA H13 filtration over deterministic simulation data. TRL-2.</p>
+</div>
+
+<div class="text-center py-6"><p class="text-[11px] text-slate-600">AEROSAFE • Team 1755080-U7Q48H2O • SEVA FIRST • Grevix Final Forge 2026</p></div>
 </div>
 </div>
 <script>
 const ctx1=document.getElementById('aqiChart').getContext('2d');
 let outData=[310,325,318,340,320,315,330,320,310,305,320,322];
 let inData=[42,48,44,46,45,43,47,45,41,42,45,44];
-const aqiChart=new Chart(ctx1,{type:'line',data:{labels:Array.from({length:12},(_,i)=>`${i*2}:00`),datasets:[{label:'Outside',data:outData,borderColor:'#EF4444',tension:0.4},{label:'Inside Dome',data:inData,borderColor:'#34D399',backgroundColor:'rgba(52,211,153,0.15)',tension:0.4,fill:true}]},options:{plugins:{legend:{labels:{color:'#889'}}}}});
+const aqiChart=new Chart(ctx1,{type:'line',data:{labels:Array.from({length:12},(_,i)=>'T-'+i),datasets:[{label:'Outside Dome',data:outData,borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,0.1)',tension:0.4,fill:true},{label:'Inside Dome',data:inData,borderColor:'#10b981',backgroundColor:'rgba(16,185,129,0.15)',tension:0.4,fill:true}]},options:{responsive:true,plugins:{legend:{labels:{color:'#9ca3af',boxWidth:12,font:{size:10}}}},scales:{x:{grid:{color:'rgba(255,255,255,0.03)'},ticks:{color:'#5a5f7a'}},y:{grid:{color:'rgba(255,255,255,0.03)'},ticks:{color:'#5a5f7a'}}}}});
 const ctx2=document.getElementById('energyChart').getContext('2d');
-new Chart(ctx2,{type:'bar',data:{labels:['Mon','Tue','Wed','Thu','Fri'],datasets:[{label:'Solar kWh',data:[12.5,14.2,13.8,15.1,14.2],backgroundColor:'#6366F1'},{label:'Play Hours',data:[6,7,6.5,8,7],backgroundColor:'#10B981'}]}});
-setInterval(()=>{let o=300+Math.floor(Math.random()*50);let inn=38+Math.floor(Math.random()*15);document.getElementById('kOut').innerText=o;document.getElementById('kIn').innerText=inn;aqiChart.data.datasets[0].data.shift();aqiChart.data.datasets[0].data.push(o);aqiChart.data.datasets[1].data.shift();aqiChart.data.datasets[1].data.push(inn);aqiChart.update('none');},2500);
+new Chart(ctx2,{type:'bar',data:{labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],datasets:[{label:'Solar kWh',data:[12.5,14.2,13.8,15.1,14.8,13.5,14.4],backgroundColor:'#6366f1'},{label:'Play Hours',data:[6,6.8,6.5,7.2,7,6.2,6.9],backgroundColor:'#10b981'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#9ca3af',font:{size:10}}}},scales:{x:{grid:{display:false},ticks:{color:'#5a5f7a'}},y:{grid:{color:'rgba(255,255,255,0.03)'},ticks:{color:'#5a5f7a'}}}}});
+setInterval(()=>{let o=300+Math.floor(Math.random()*50);let inn=38+Math.floor(Math.random()*15);document.getElementById('kOut').innerText=o;document.getElementById('kIn').innerText=inn;document.getElementById('kBatt').innerText=(11+Math.random()*2).toFixed(1)+'h';document.getElementById('aiText').innerText=`Analyzing AQI ${o}... Inside ${inn} (${Math.round((1-inn/o)*100)}% cleaner). SAFE TO PLAY.`;aqiChart.data.datasets[0].data.shift();aqiChart.data.datasets[0].data.push(o);aqiChart.data.datasets[1].data.shift();aqiChart.data.datasets[1].data.push(inn);aqiChart.update('none');},2800);
 </script>
 </body></html>
