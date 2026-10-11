@@ -89,3 +89,4 @@ git clone https://github.com/Sraveena1992/anti-smog-solar-dome.git
 cd anti-smog-solar-dome
 # Just open index.html - No npm needed (Static V5)
 # Or serve with: python -m http.server 8000
+
