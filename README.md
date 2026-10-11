@@ -16,6 +16,8 @@ Children play in Hazardous air because there is **no Safe Zone**. Existing air p
 **Our Insight:** We don't need to clean Delhi's air. We need to create a 500 sq. ft. **Protected Play Zone** where AQI is always < 50.
 
 ### 2. THE SOLUTION - What We Built
+<img width="1307" height="1600" alt="anti_smoge" src="https://github.com/user-attachments/assets/ac5f5cd7-b6e9-4d85-811f-e4587fd9803c" />
+
 
 A **Solar-Powered, HEPA-Filtered Positive Pressure Dome** for community parks & schools.
 
