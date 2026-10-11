@@ -1,8 +1,8 @@
-# 🟢 AEROSAFE - Anti-Smog Solar Dome | Protect The Playground
+# 🟢 AEROSAFE - Anti-Smog Solar Dome | Protect The Playground | OS (Breathe Safe, Play Longer)
 
-> **SEVA FIRST 2026 (DTU) | Grevix 2026 - Pressure Test Finalist**
-> **Team ID:** 1755080-U7Q48H2O | **TRL:** 2 - Concept Visualization & Planning Estimate
-> **Live Dashboard:** https://anti-smog-solar-dome.onrender.com/ (WIP) | **Status:** Safe for Play
+> **TRL:** 2 - Concept Visualization & Planning Estimate
+> **Live Dashboard:** https://anti-smog-solar-dome.onrender.com
+> **Status:** Safe for Play 
 > 
 <img width="1600" height="856" alt="Dome-Live" src="https://github.com/user-attachments/assets/656a0b08-ff6d-4d63-9aaa-746944612b8c" />
 
