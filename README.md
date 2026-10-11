@@ -1,10 +1,14 @@
 # 🟢 AEROSAFE - Anti-Smog Solar Dome | Protect The Playground | OS (Breathe Safe, Play Longer)
+AEROSAFE is India's first solar-powered, AI-monitored clean-air dome system designed for national-level deployment - from village playgrounds to Khelo India stadiums to international venues. When Delhi AQI crosses 300+ during stubble burning season, even international athletes struggle to breathe (Delhi Half Marathon, Cricket World Cup smog issues). AEROSAFE creates an 87% cleaner play zone (Inside 40 AQI vs Outside 300+ AQI) using HEPA H13 certified filtration, 3kW solar + 12.8h battery backup, for every kid, every athlete, national & international.
 
 > **TRL:** 2 - Concept Visualization & Planning Estimate
+
 > **Live Dashboard:** https://anti-smog-solar-dome.onrender.com
+
 > **Status:** Safe for Play 
 > 
-<img width="1600" height="856" alt="Dome-Live" src="https://github.com/user-attachments/assets/656a0b08-ff6d-4d63-9aaa-746944612b8c" />
+<img width="1600" height="860" alt="dome-online" src="https://github.com/user-attachments/assets/62856664-0ad1-4148-a711-f8a4fb57fc2d" />
+
 
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen) ![TRL](https://img.shields.io/badge/TRL-2%20Compliant-blue) ![Solar](https://img.shields.io/badge/Power-24V%20DC%20Solar-orange) ![AQI](https://img.shields.io/badge/AQI-Inside%2045%20Safe-success)
 
