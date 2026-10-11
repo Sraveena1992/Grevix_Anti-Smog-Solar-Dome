@@ -2,7 +2,9 @@
 
 > **SEVA FIRST 2026 (DTU) | Grevix 2026 - Pressure Test Finalist**
 > **Team ID:** 1755080-U7Q48H2O | **TRL:** 2 - Concept Visualization & Planning Estimate
-> **Live Dashboard:** [aerosafe.vercel.app](https://aerosafe.vercel.app) (WIP) | **Status:** Safe for Play
+> **Live Dashboard:** https://anti-smog-solar-dome.onrender.com/ (WIP) | **Status:** Safe for Play
+> 
+<img width="1600" height="856" alt="Dome-Live" src="https://github.com/user-attachments/assets/656a0b08-ff6d-4d63-9aaa-746944612b8c" />
 
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen) ![TRL](https://img.shields.io/badge/TRL-2%20Compliant-blue) ![Solar](https://img.shields.io/badge/Power-24V%20DC%20Solar-orange) ![AQI](https://img.shields.io/badge/AQI-Inside%2045%20Safe-success)
 
@@ -79,10 +81,15 @@ We didn't just build a dashboard, we built for disruption.
 
 ### 6. HOW TO RUN
 
-```bash
 git clone https://github.com/Sraveena1992/anti-smog-solar-dome.git
 cd frontend
 npm install
 npm run dev
 # Backend Simulator
 node backend/sensor_simulator.js
+
+### 7. Note on Demo: 
+This dashboard at anti-smog-solar-dome.onrender.com is a TRL-2 simulated live demo. AQI values are simulated using HEPA H13 genuine efficiency model (99.97%) and battery backup is calculated on 24V 40Ah physics. For TRL-3, we will integrate ESP32 + SDS011 + Firebase for real-time hardware data.
+
+
+
