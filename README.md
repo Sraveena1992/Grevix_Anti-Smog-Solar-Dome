@@ -21,6 +21,9 @@ A **Solar-Powered, HEPA-Filtered Positive Pressure Dome** for community parks & 
 
 **Outside:** AQI 320 (Hazardous, Red) | **Inside Dome:** AQI 45 (Safe, Green) | **Efficiency: 85%**
 
+<img width="1920" height="1280" alt="architecture_grevix" src="https://github.com/user-attachments/assets/b356a34e-359b-477f-ad58-08ba4b7f421d" />
+
+
 #### System Architecture (No Hallucination - Only Real Specs)
 This is exactly what we submitted in Dossier - Visual 1 & 2.
 
